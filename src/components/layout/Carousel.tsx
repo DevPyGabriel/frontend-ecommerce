@@ -66,7 +66,7 @@ export const Carousel = ({ slides = [] }: CarouselProps) => {
       </div>
 
       <div className="absolute bottom-0 flex w-full items-center justify-center py-2 sm:py-3 sm:gap-2 gap-1.5">
-        {slides.map((s, i) => {
+        {slides.map((_, i) => {
           return (
             <div
               onClick={() => {
