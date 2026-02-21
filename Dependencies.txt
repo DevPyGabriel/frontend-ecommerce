@@ -1,0 +1,3 @@
+#Install flowbite library 
+
+npm install flowbite
