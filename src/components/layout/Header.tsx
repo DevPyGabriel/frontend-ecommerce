@@ -21,7 +21,7 @@ export const Header = () => {
   }, []);
 
   return (
-    <section className={`pt-4 absolute top-0 w-full z-50 ${headerClass} left-1/2 -translate-x-1/2 transition-all duration-300`}>
+    <section className={`pt-4 fixed top-0 w-full z-50 ${headerClass} left-1/2 -translate-x-1/2 transition-all duration-300`}>
       <header className="w-full bg-background1 flex items-center justify-between rounded-md px-3 md:px-4 py-3 md:py-2">
         <div
           className={`flex items-center gap-x-4 font-rethink tracking-tight text-white/60`}
@@ -49,12 +49,6 @@ export const Header = () => {
             className="hover:text-white transition-all transform duration-200 hidden sm:flex"
           >
             Inicio
-          </a>
-          <a
-            href=""
-            className="hover:text-white transition-all transform duration-200 hidden sm:flex"
-          >
-            Categorias
           </a>
           <a
             href=""
@@ -89,9 +83,6 @@ export const Header = () => {
           <div className="flex flex-col divide-y divide-white/10 font-rethink text-white/60 tracking-tight">
             <a href="" className="py-2 hover:text-white select-none">
               Inicio
-            </a>
-            <a href="" className="py-2 hover:text-white select-none">
-              Categorias
             </a>
             <a href="" className="py-2 hover:text-white select-none">
               Contacto

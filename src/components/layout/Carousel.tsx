@@ -52,14 +52,14 @@ export const Carousel = ({ slides = [] }: CarouselProps) => {
       <div className="absolute top-0 h-full w-full justify-between items-center text-white/50 flex px-2 md:px-4">
         <button
           onClick={previusSlide}
-          className="bg-background0 size-6 xs:size-8 flex items-center justify-center rounded-full"
+          className="bg-background0 size-6 xs:size-8 flex items-center justify-center rounded-full hover:bg-white/20 transition-all duration-200"
         >
           <Icons.Arrow width={8} height={13} />
         </button>
 
         <button
           onClick={nextSlide}
-          className="rotate-180 bg-background0 size-6 xs:size-8 flex items-center justify-center rounded-full"
+          className="rotate-180 bg-background0 size-6 xs:size-8 flex items-center justify-center rounded-full hover:bg-white/20 transition-all duration-200"
         >
           <Icons.Arrow width={8} height={13} />
         </button>
