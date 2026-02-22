@@ -3,7 +3,7 @@ import type { CategoryGroup } from "../../types/product";
 
 export const CategorySection = ({ categoryName, products }: CategoryGroup) => {
 
-  const rowConfig = products.length > 5 ? "grid-rows-2 md:grid-rows-1" : "md:grid-rows-1";
+  const rowConfig = products.length > 5 ? "grid-rows-1" : "grid-rows-1";
   
   return (
     <section className="bg-background0 font-rethink pb-6">
