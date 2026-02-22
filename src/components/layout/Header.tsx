@@ -21,7 +21,7 @@ export const Header = () => {
   }, []);
 
   return (
-    <section className={`pt-4 fixed top-0 w-full z-50 ${headerClass} left-1/2 -translate-x-1/2 transition-all duration-300`}>
+    <section className={`pt-4 absolute top-0 w-full z-50 ${headerClass} left-1/2 -translate-x-1/2 transition-all duration-300`}>
       <header className="w-full bg-background1 flex items-center justify-between rounded-md px-3 md:px-4 py-3 md:py-2">
         <div
           className={`flex items-center gap-x-4 font-rethink tracking-tight text-white/60`}
