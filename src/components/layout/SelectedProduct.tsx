@@ -82,7 +82,7 @@ export const SelectedProduct = () => {
             {finalPrice.toFixed(2)}$
           </span>
         </div>
-        <div className="flex items-center gap-x-3 text-white/60">
+        <div className="flex items-center gap-x-3 text-white/60 pb-2">
           <div className="flex items-center gap-x-2 relative">
             <span>Cantidad: </span>
             <div
@@ -116,7 +116,7 @@ export const SelectedProduct = () => {
           <div className="flex items-center gap-x-2 relative">
             <span>Tipo: </span>
             <div
-              className="flex items-center gap-x-3 py-0.5 px-2 bg-background1 rounded-sm text-white/60 cursor-pointer active:ring-1 active:ring-white/30 transition-all duration-100"
+              className="flex items-center gap-x-3 py-0.5 px-3 bg-background1 rounded-sm text-white/60 cursor-pointer active:ring-1 active:ring-white/30 transition-all duration-100"
               onClick={() => setIsTypeDropdownOpen(!isTypeDropdownOpen)}
             >
               <span>{product.details[0].amount[selectedTypeIndex]}</span>
