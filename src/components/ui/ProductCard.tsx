@@ -1,25 +1,12 @@
 import type { Product } from "../../types/product";
 import { Icons } from "../Icons";
+import { Link } from "react-router-dom";
 
 export const ProductCard = ({ product }: { product: Product }) => {
-  const handleNavigate = () => {
-    if (product.link) window.location.href = product.link;
-  };
-
-  const onKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === "Enter" || e.key === " ") {
-      e.preventDefault();
-      handleNavigate();
-    }
-  };
-
   return (
-    <div
-      role="link"
-      tabIndex={0}
-      onClick={handleNavigate}
-      onKeyDown={onKeyDown}
-      className="w-64 shrink-0 tracking-[-0.02em] rounded-md overflow-hidden bg-background1 cursor-pointer transition-all duration-300 group"
+    <Link
+      to={`/product/${product.id}`}
+      className="w-64 shrink-0 tracking-[-0.02em] rounded-md overflow-hidden bg-background1 cursor-pointer transition-all duration-300 group block"
     >
       <div className="h-42 overflow-hidden">
         <img
@@ -48,6 +35,6 @@ export const ProductCard = ({ product }: { product: Product }) => {
         </p>
         
       </div>
-    </div>
+    </Link>
   );
 };

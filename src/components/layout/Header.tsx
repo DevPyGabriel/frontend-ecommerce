@@ -45,7 +45,7 @@ export const Header = () => {
             />
           </a>
           <a
-            href=""
+            href="/"
             className="hover:text-white transition-all transform duration-200 hidden sm:flex"
           >
             Inicio
