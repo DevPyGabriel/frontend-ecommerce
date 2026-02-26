@@ -1,8 +1,7 @@
-import type { CategoryGroup } from "../../types/product";
-import { CategorySection } from "../ui/CategorySection";
+import type { CategoryGroup } from "../../../types/product";
+import { CategorySection } from "./CategorySection";
 
 export const Products = () => {
-  // Mock de datos: Esto vendría de tu backend o estado global
   const data: CategoryGroup[] = [
     {
       categoryName: "Servicios de Recarga",
@@ -13,6 +12,18 @@ export const Products = () => {
           description: "Saldo inmediato para tu línea prepago.",
           img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJQeJyzgAzTEVqXiGe90RGBFhfp_4RcJJMQ&s",
           link: "/recarga-movistar",
+          variants: [
+            {
+              id: 1,
+              name: "variante 1",
+              price: 1,
+            },
+            {
+              id: 2,
+              name: "variante 2",
+              price: 1,
+            },
+          ],
         },
         {
           id: "2",
@@ -20,6 +31,18 @@ export const Products = () => {
           description: "Sin comisiones ocultas, 24/7.",
           img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJQeJyzgAzTEVqXiGe90RGBFhfp_4RcJJMQ&s",
           link: "/recarga-digitel",
+          variants: [
+            {
+              id: 1,
+              name: "variante 1",
+              price: 1,
+            },
+            {
+              id: 2,
+              name: "variante 2",
+              price: 1,
+            },
+          ],
         },
         {
           id: "3",
@@ -27,6 +50,18 @@ export const Products = () => {
           description: "Sin comisiones ocultas, 24/7.",
           img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJQeJyzgAzTEVqXiGe90RGBFhfp_4RcJJMQ&s",
           link: "/recarga-digitel",
+          variants: [
+            {
+              id: 1,
+              name: "variante 1",
+              price: 1,
+            },
+            {
+              id: 2,
+              name: "variante 2",
+              price: 1,
+            },
+          ],
         },
         {
           id: "4",
@@ -34,6 +69,18 @@ export const Products = () => {
           description: "Sin comisiones ocultas, 24/7.",
           img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJQeJyzgAzTEVqXiGe90RGBFhfp_4RcJJMQ&s",
           link: "/recarga-digitel",
+          variants: [
+            {
+              id: 1,
+              name: "variante 1",
+              price: 1,
+            },
+            {
+              id: 2,
+              name: "variante 2",
+              price: 1,
+            },
+          ],
         },
         {
           id: "5",
@@ -41,6 +88,18 @@ export const Products = () => {
           description: "Sin comisiones ocultas, 24/7.",
           img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJQeJyzgAzTEVqXiGe90RGBFhfp_4RcJJMQ&s",
           link: "/recarga-digitel",
+          variants: [
+            {
+              id: 1,
+              name: "variante 1",
+              price: 1,
+            },
+            {
+              id: 2,
+              name: "variante 2",
+              price: 1,
+            },
+          ],
         },
         {
           id: "6",
@@ -48,6 +107,18 @@ export const Products = () => {
           description: "Sin comisiones ocultas, 24/7.",
           img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJQeJyzgAzTEVqXiGe90RGBFhfp_4RcJJMQ&s",
           link: "/recarga-digitel",
+          variants: [
+            {
+              id: 1,
+              name: "variante 1",
+              price: 1,
+            },
+            {
+              id: 2,
+              name: "variante 2",
+              price: 1,
+            },
+          ],
         },
       ],
     },
@@ -60,6 +131,18 @@ export const Products = () => {
           description: "Envío digital instantáneo.",
           img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJQeJyzgAzTEVqXiGe90RGBFhfp_4RcJJMQ&s",
           link: "/amazon",
+          variants: [
+            {
+              id: 1,
+              name: "variante 1",
+              price: 1,
+            },
+            {
+              id: 2,
+              name: "variante 2",
+              price: 1,
+            },
+          ],
         },
         {
           id: "11",
@@ -67,6 +150,18 @@ export const Products = () => {
           description: "Envío digital instantáneo.",
           img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJQeJyzgAzTEVqXiGe90RGBFhfp_4RcJJMQ&s",
           link: "/amazon",
+          variants: [
+            {
+              id: 1,
+              name: "variante 1",
+              price: 1,
+            },
+            {
+              id: 2,
+              name: "variante 2",
+              price: 1,
+            },
+          ],
         },
         {
           id: "12",
@@ -74,6 +169,18 @@ export const Products = () => {
           description: "Envío digital instantáneo.",
           img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJQeJyzgAzTEVqXiGe90RGBFhfp_4RcJJMQ&s",
           link: "/amazon",
+          variants: [
+            {
+              id: 1,
+              name: "variante 1",
+              price: 1,
+            },
+            {
+              id: 2,
+              name: "variante 2",
+              price: 1,
+            },
+          ],
         },
         {
           id: "13",
@@ -81,6 +188,18 @@ export const Products = () => {
           description: "Envío digital instantáneo.",
           img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJQeJyzgAzTEVqXiGe90RGBFhfp_4RcJJMQ&s",
           link: "/amazon",
+          variants: [
+            {
+              id: 1,
+              name: "variante 1",
+              price: 1,
+            },
+            {
+              id: 2,
+              name: "variante 2",
+              price: 1,
+            },
+          ],
         },
       ],
     },

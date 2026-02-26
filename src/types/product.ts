@@ -1,9 +1,16 @@
+export interface Variant {
+  id: number;
+  name: string;
+  price: number;
+}
+
 export interface Product {
   id: string;
   title: string;
   description: string;
   img: string;
   link: string;
+  variants: Variant[];
 }
 
 export interface CategoryGroup {
@@ -16,7 +23,7 @@ export interface ServiceData {
   available: boolean;
   finalPrice: number[];
   amount: string[];
-  serviceImage: string
+  serviceImage: string;
 }
 
 export interface SelectedProductProps {
